@@ -1,0 +1,19 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.img-50 {
+    height: 50px;
+}
+
+.bg-yellow {
+    background-color: #fcd232 !important;
+}
+
+.bg-red {
+    background-color: #ff1300 !important;
+}
+
+.x-small {
+    font-size: x-small;
+}
