@@ -1,3 +1,7 @@
 .banner {
-    background-image: ;
+    height: 30vh;
+    background: url(./img/successful-team-group-young-business.jpg) no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
