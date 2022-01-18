@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.bg-grey {
+    background-color: #302F38;
+}
+
+.b-left {
+    border-left: 1px solid grey;
+}
+
+.row p {
+    padding-left: 10px;
+}
+
+.w-70 {
+    width: 70%;
+}
