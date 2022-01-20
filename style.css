@@ -1,3 +1,8 @@
 .bg-yellow {
     background-color: #FCD232;
 }
+
+.btn-color {
+    background-color: #FF1300 !important;
+    color: #fff !important;
+}
