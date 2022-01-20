@@ -1,0 +1,23 @@
+.img-50 {
+    height: 50px;
+}
+
+.bg-yellow {
+    background-color: #fcd232 !important;
+}
+
+.bg-red {
+    background-color: #ff1300 !important;
+}
+
+.bg-grey {
+    background-color: #302F38;
+}
+
+.c-white {
+    color: #fff;
+}
+
+.x-small {
+    font-size: x-small;
+}
