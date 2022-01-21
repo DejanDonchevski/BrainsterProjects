@@ -21,3 +21,16 @@
 .x-small {
     font-size: x-small;
 }
+
+.bh-50 {
+    height: 50px !important;
+}
+
+.height-custom {
+    height: 82vh;
+}
+
+.p-custom {
+    padding-top: 90px !important;
+    padding-bottom: 50px !important;
+}
