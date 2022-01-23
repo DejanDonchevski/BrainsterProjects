@@ -10,6 +10,14 @@
     background-color: #ff1300 !important;
 }
 
+.bg-grey {
+    background-color: #302F38;
+}
+
+.c-white {
+    color: #fff;
+}
+
 .btn-color {
     background-color: #FF1300 !important;
     color: #fff !important;
@@ -31,10 +39,25 @@
     align-items: center;
 }
 
-.bg-grey {
-    background-color: #302F38;
+.b-left {
+    border-left: 1px solid grey;
 }
 
-.c-white {
-    color: #fff;
+.row p {
+    width: 70%;
+    font-weight: bold;
+    align-self: center;
+    margin: 20px 0;
 }
+
+.row i {
+    width: 30%;
+    text-align: center;
+    align-self: center;
+    color: #302F38;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+

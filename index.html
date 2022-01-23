@@ -8,6 +8,7 @@
         <meta name="author" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
 
         <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -44,9 +45,44 @@
             </div>
         </nav>
         
+
         <!-- BANNER SECTION -->
         <div class="banner">
             <h1 class="text-light">Brainster Labs</h1>
+        </div>
+
+        <!-- FILTER SECTION -->
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-12 col-lg-4 marketing-checked">
+                    <input type="checkbox" id="filter-marketing" class="">
+                    <label for="filter-marketing" class="mb-0 w-100 h-100 p-3">
+                    <div class="text-white d-flex">
+                        <p class="pl-3">Проекти на студенти по академијата <br>за маркетинг</p>
+                        <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                    </label>
+                </div>
+
+                <div class="col-12 col-lg-4 b-left coding-checked">
+                    <input type="checkbox" id="filter-coding" class="">
+                    <label for="filter-coding" class="mb-0 w-100 h-100 p-3">
+                    <div class="text-white d-flex">
+                        <p class="pl-3">Проекти на студенти по академијата <br>за програмирање</p>
+                        <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                    </label>
+                </div>
+                <div class="col-12 col-lg-4 b-left design-checked">
+                    <input type="checkbox" id="filter-design" class="">
+                    <label for="filter-design" class="mb-0 w-100 h-100 p-3">
+                    <div class="text-white d-flex">
+                        <p class="pl-3">Проекти на студенти по академијата <br>за дизајн</p>
+                        <i class="fas fa-check-circle fa-2x"></i>
+                    </div>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <!-- CARD SECTION -->
@@ -307,6 +343,7 @@
         <div class="footer bg-grey text-center c-white">
             <p class="font-weight-bold py-3 mb-0">Изработено со &#10084 од студентите на Brainster.</p>
         </div>
+
         
         <!-- jQuery library -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
