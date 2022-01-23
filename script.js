@@ -1,103 +1,145 @@
-document
-        .querySelector("#filter-coding")
-        .addEventListener("change", filterCoding);
-      document
-        .querySelector("#filter-marketing")
-        .addEventListener("change", filterMarketing);
-      document
-        .querySelector("#filter-design")
-        .addEventListener("change", filterDesign);
-
-      function filterCoding() {
-        hideAllCards();
+document.querySelector("#filter-coding").addEventListener("change", filterCoding);
+document.querySelector("#filter-design").addEventListener("change", filterDesign);
+document.querySelector("#filter-marketing").addEventListener("change", filterMarketing);
 
 
+function filterCoding() {
+    hideAllCards();
 
-        if (document.querySelector("#filter-coding").checked) {
-          var programmingChecked = document.querySelectorAll(".coding-checked");
-          programmingChecked.forEach(element => {
+    if(document.querySelector("#filter-coding").checked) {
+
+        var codingChecked = document.querySelectorAll(".coding-checked");
+          codingChecked.forEach(element => {
               element.style.background = "#ff0000";
               element.style.color = "#302f38";
-          })
+        });
 
-          var codingCards = document.querySelectorAll(".coding");
-          codingCards.forEach(codingCard => {
+        var codingCards = document.querySelectorAll(".coding");
+        codingCards.forEach(codingCard => {
             codingCard.style.display = "inline-block";
-          });
+        });
 
-          document.querySelector("#filter-marketing").checked = false;
-          document.querySelector("#filter-design").checked = false;
+        document.querySelector("#filter-design").checked = false;
+        document.querySelector("#filter-marketing").checked = false;
 
-          var designChecked = document.querySelectorAll(".design-checked");
+        var designChecked = document.querySelectorAll(".design-checked");
           designChecked.forEach(element => {
               element.style.background = "#302f38";
               element.style.color = "#fff";
-          })
+          });
+
           var marketingChecked = document.querySelectorAll(".marketing-checked");
           marketingChecked.forEach(element => {
               element.style.background = "#302f38";
               element.style.color = "#fff";
-          })
-        }
-        else {
-          showAllCards();
+          });
 
-          var programmingChecked = document.querySelectorAll(".coding-checked");
-          programmingChecked.forEach(element => {
+    } else {
+        showAllCards();
+        var codingChecked = document.querySelectorAll(".coding-checked");
+          codingChecked.forEach(element => {
               element.style.background = "#302f38";
               element.style.color = "#fff";
-          })
-        }
-      }
+            });
+    }
+}
 
-      function filterMarketing() {
-        hideAllCards();
+function filterDesign() {
+    hideAllCards();
 
-        if (document.querySelector("#filter-marketing").checked) {
-          var marketingChecked = document.querySelectorAll(".marketing-checked");
-          marketingChecked.forEach(element => {
+
+    if(document.querySelector("#filter-design").checked) {
+
+        var designChecked = document.querySelectorAll(".design-checked");
+          designChecked.forEach(element => {
               element.style.background = "#ff0000";
               element.style.color = "#302f38";
-          })
+            });
 
-          var marketingCards = document.querySelectorAll(".marketing");
-          marketingCards.forEach(marketingCard => {
-            marketingCard.style.display = "inline-block";
-          });
+        var designCards = document.querySelectorAll(".design");
+        designCards.forEach(designCard => {
+            designCard.style.display = "inline-block";
+        });
 
-          document.querySelector("#filter-coding").checked = false;
-          document.querySelector("#filter-design").checked = false;
+        document.querySelector("#filter-coding").checked = false;
+        document.querySelector("#filter-marketing").checked = false;
 
-          var designChecked = document.querySelectorAll(".design-checked");
-          designChecked.forEach(element => {
+        var marketingChecked = document.querySelectorAll(".marketing-checked");
+          marketingChecked.forEach(element => {
               element.style.background = "#302f38";
               element.style.color = "#fff";
-          })
+            });
+
           var codingChecked = document.querySelectorAll(".coding-checked");
           codingChecked.forEach(element => {
               element.style.background = "#302f38";
               element.style.color = "#fff";
-          })
-        }
-        else {
-          showAllCards();
+            });
 
-          var marketingChecked = document.querySelectorAll(".marketing-checked");
+    } else {
+        showAllCards();
+        var designChecked = document.querySelectorAll(".design-checked");
+          designChecked.forEach(element => {
+              element.style.background = "#302f38";
+              element.style.color = "#fff";
+            });
+    }
+}
+
+function filterMarketing() {
+    hideAllCards();
+
+    if(document.querySelector("#filter-marketing").checked) {
+
+        var marketingChecked = document.querySelectorAll(".marketing-checked");
+          marketingChecked.forEach(element => {
+              element.style.background = "#ff0000";
+              element.style.color = "#302f38";
+            });
+
+        var marketingCards = document.querySelectorAll(".marketing");
+        marketingCards.forEach(marketingCard => {
+            marketingCard.style.display = "inline-block";
+        });
+
+        document.querySelector("#filter-design").checked = false;
+        document.querySelector("#filter-coding").checked = false;
+
+        var designChecked = document.querySelectorAll(".design-checked");
+          designChecked.forEach(element => {
+              element.style.background = "#302f38";
+              element.style.color = "#fff";
+          });
+
+        var codingChecked = document.querySelectorAll(".coding-checked");
+          codingChecked.forEach(element => {
+              element.style.background = "#302f38";
+              element.style.color = "#fff";
+            });
+
+    } else {
+        showAllCards();
+        var marketingChecked = document.querySelectorAll(".marketing-checked");
           marketingChecked.forEach(element => {
               element.style.background = "#302f38";
               element.style.color = "#fff";
-          })
-        }
+            });
     }
+}
 
-      function filterDesign() {
-        hideAllCards();
 
-        if (document.querySelector("#filter-design").checked) {
-          var designChecked = document.querySelectorAll(".design-checked");
-          designChecked.forEach(element => {
-              element.style.background = "#ff0000";
-              element.style.color = "#302f38";
-            })
-        }
-    }    
+function hideAllCards() {
+    var allCards = document.querySelectorAll(".card");  
+
+    allCards.forEach(card => {
+        card.style.display = "none";
+    });
+}
+
+function showAllCards() {
+    var allCards = document.querySelectorAll(".card");  
+
+    allCards.forEach(card => {
+        card.style.display = "inline-block";
+    });
+}

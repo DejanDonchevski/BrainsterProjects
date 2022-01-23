@@ -44,7 +44,7 @@
 }
 
 .row p {
-    width: 70%;
+    /* width: 70%; */
     font-weight: bold;
     align-self: center;
     margin: 20px 0;
