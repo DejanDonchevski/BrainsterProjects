@@ -129,7 +129,7 @@ function filterMarketing() {
 
 
 function hideAllCards() {
-    var allCards = document.querySelectorAll(".card");  
+    var allCards = document.querySelectorAll(".hidden");  
 
     allCards.forEach(card => {
         card.style.display = "none";
@@ -137,7 +137,7 @@ function hideAllCards() {
 }
 
 function showAllCards() {
-    var allCards = document.querySelectorAll(".card");  
+    var allCards = document.querySelectorAll(".hidden");  
 
     allCards.forEach(card => {
         card.style.display = "inline-block";
