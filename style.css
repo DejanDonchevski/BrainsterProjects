@@ -4,6 +4,11 @@
 
 .bg-yellow {
     background-color: #FCD232;
+
+}
+
+.img-50 {
+    height: 50px;
 }
 
 .bg-red {
@@ -61,3 +66,51 @@ input[type=checkbox] {
     display: none;
 }
 
+.x-small {
+    font-size: x-small;
+}
+
+.bh-50 {
+    height: 50px !important;
+}
+
+.height-custom {
+    height: 82vh;
+}
+
+.p-custom {
+    padding-top: 90px !important;
+    padding-bottom: 50px !important;
+}
+
+/* .btn2 {
+    position: relative;
+}
+
+.btn2.animating {
+    background-color: transparent;
+    color: transparent !important;
+    user-select: none;
+    cursor: default;
+}
+
+.btn2::before {
+    content: "";
+    display: none;
+    position: absolute;
+    inset: 0;
+    border-radius: .25em;
+    animation: squish 500ms;
+    animation-fill-mode: forwards;
+}
+
+.btn2.animating::before {
+    display: block;
+}
+
+@keyframes squish {
+    100% {
+        top: 45% !important;
+        bottom: 45% !important;
+    }
+} */
