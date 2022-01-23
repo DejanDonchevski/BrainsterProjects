@@ -17,5 +17,9 @@
     width: 30%;
     text-align: center;
     align-self: center;
+    color: #302F38;
 }
 
+input[type=checkbox] {
+    display: none;
+}
