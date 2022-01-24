@@ -20,7 +20,7 @@
         
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-yellow px-5 py-3">
-            <a class="navbar-brand text-center" href="#"><img src="./img/Logo.png" alt="logoimage" class="img-50 mb-2"><p class="text-dark text-uppercase font-weight-bold mb-0 x-small">Brainster</p></a>
+            <a class="navbar-brand text-center" href="./index.html"><img src="./img/Logo.png" alt="logoimage" class="img-50 mb-2"><p class="text-dark text-uppercase font-weight-bold mb-0 x-small">Brainster</p></a>
             <div class="collapse navbar-collapse nav-link" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ml-auto">
                     <li class="nav-item mr-5">

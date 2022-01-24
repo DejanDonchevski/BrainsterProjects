@@ -53,7 +53,6 @@
 }
 
 .row p {
-    /* width: 70%; */
     font-weight: bold;
     align-self: center;
     margin: 20px 0;
@@ -79,7 +78,7 @@ input[type=checkbox] {
 }
 
 .height-custom {
-    height: 82vh;
+    height: 105vh;
 }
 
 .p-custom {

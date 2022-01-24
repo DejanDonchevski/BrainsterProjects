@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
--- Generation Time: Jan 23, 2022 at 04:39 PM
--- Server version: 5.7.34
--- PHP Version: 7.4.21
+-- Host: 127.0.0.1
+-- Generation Time: Jan 24, 2022 at 02:17 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -62,8 +62,7 @@ CREATE TABLE `hire_our_student` (
 --
 
 INSERT INTO `hire_our_student` (`id`, `fullname`, `company_name`, `contact_email`, `contact_mobile`, `student_course`) VALUES
-(1, 'Atanasija Gjorgievski', 'Imagine LLC', 'gjorgievskiatanasija@gmail.com', '+38970255516', 2),
-(2, 'Gjorgievski Atanasija', 'DevCut Inc', 'atanasija1109gjorgievski@gmail.com', '070255516', 2);
+(8, 'dejanVALDES', 'MasterChief', 'dejand998@hotmail.com', '+38975501506', 2);
 
 --
 -- Indexes for dumped tables
@@ -96,7 +95,7 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `hire_our_student`
 --
 ALTER TABLE `hire_our_student`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
