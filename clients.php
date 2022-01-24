@@ -7,8 +7,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
 
         <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,19 +24,19 @@
             <div class="collapse navbar-collapse nav-link" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ml-auto">
                     <li class="nav-item mr-5">
-                        <a class="nav-link font-weight-bold text-dark" href="https://brainster.co/marketing/">Академија за маркетинг</a>
+                        <a class="nav-link font-weight-bold text-dark nav-animation pb-0 pl-0 pr-0" href="https://brainster.co/marketing/">Академија за маркетинг</a>
                     </li>
                     <li class="nav-item mr-5">
-                        <a class="nav-link font-weight-bold text-dark" href="https://brainster.co/full-stack/">Академија за програмирање</a>
+                        <a class="nav-link font-weight-bold text-dark nav-animation pb-0 pl-0 pr-0" href="https://brainster.co/full-stack/">Академија за програмирање</a>
                     </li>
                     <li class="nav-item mr-5">
-                        <a class="nav-link font-weight-bold text-dark" href="https://brainster.co/data-science/">Академија за data science</a>
+                        <a class="nav-link font-weight-bold text-dark nav-animation pb-0 pl-0 pr-0" href="https://brainster.co/data-science/">Академија за data science</a>
                     </li>
                     <li class="nav-item mr-5">
-                        <a class="nav-link font-weight-bold text-dark" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+                        <a class="nav-link font-weight-bold text-dark nav-animation pb-0 pl-0 pr-0" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
                     </li>
                     <li class="nav-item ml-5">
-                        <a class="btn text-white bg-red font-weight-bold align-items-center" href="./form.html">Вработи наш студент</a>
+                        <a class="btn text-white bg-red font-weight-bold align-items-center btn-animation" href="./form.html">Вработи наш студент</a>
                     </li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
                     <a class="font-13 text-white ml-3" href="https://brainster.co/graphic-design/" target="_blank">Академија за дизајн</a>
 
                     <div class="sidebar-button">
-                        <a href="form.html" class="btn bg-red font-weight-bold py-1 px-2 ml-3">Вработи наш студент</a>
+                        <a href="./form.html" class="btn bg-red font-weight-bold py-1 px-2 ml-3">Вработи наш студент</a>
                     </div>
                 </div>
             </div>
