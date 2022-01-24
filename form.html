@@ -8,6 +8,8 @@
         <meta name="author" content="" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
 
         <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,12 +20,9 @@
     <body>
         
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-yellow px-5 py-3 border-bottom">
-            <a class="navbar-brand text-center" href="form.html"><img src="./img/Logo.png" alt="logoimage" class="img-50 mb-2"><p class="text-dark text-uppercase font-weight-bold mb-0 x-small">Brainster</p></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-expand-lg bg-yellow px-5 py-3">
+            <a class="navbar-brand text-center" href="#"><img src="./img/Logo.png" alt="logoimage" class="img-50 mb-2"><p class="text-dark text-uppercase font-weight-bold mb-0 x-small">Brainster</p></a>
+            <div class="collapse navbar-collapse nav-link" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ml-auto">
                     <li class="nav-item mr-5">
                         <a class="nav-link font-weight-bold text-dark" href="https://brainster.co/marketing/">Академија за маркетинг</a>
@@ -38,9 +37,29 @@
                         <a class="nav-link font-weight-bold text-dark" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
                     </li>
                     <li class="nav-item ml-5">
-                        <a class="btn text-white bg-red font-weight-bold" href="#">Вработи наш студент</a>
+                        <a class="btn text-white bg-red font-weight-bold align-items-center" href="./form.html">Вработи наш студент</a>
                     </li>
                 </ul>
+            </div>
+
+            <div class="hamburger">
+                <div onclick="showSidebar()" class="toggle-nav mr-4">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="sidebar">
+                    <a onclick="closeSidebar()"><i class="fas fa-times fa-2x"></i></a>
+                    <a class="font-13 text-white ml-3 mt-5" href="https://brainster.co/marketing/" target="_blank">Академија за маркетинг</a>
+                    <a class="font-13 text-white ml-3" href="https://brainster.co/full-stack/" target="_blank">Академија за програмирање</a>
+                    <a class="font-13 text-white ml-3" href="https://brainster.co/data-science/" target="_blank">Академија за data science</a>
+                    <a class="font-13 text-white ml-3" href="https://brainster.co/graphic-design/" target="_blank">Академија за дизајн</a>
+
+                    <div class="sidebar-button">
+                        <a href="form.html" class="btn bg-red font-weight-bold py-1 px-2 ml-3">Вработи наш студент</a>
+                    </div>
+                </div>
             </div>
         </nav>
 

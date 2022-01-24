@@ -143,3 +143,15 @@ function showAllCards() {
         card.style.display = "inline-block";
     });
 }
+
+
+
+function showSidebar() {
+    let mySidebar = document.querySelector('.sidebar');
+    mySidebar.style.width = '100%';
+}
+
+function closeSidebar() {
+    let mySidebar = document.querySelector('.sidebar');
+    mySidebar.style.width = '0';
+}
