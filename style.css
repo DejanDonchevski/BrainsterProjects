@@ -178,9 +178,20 @@ input[type=checkbox] {
 }
 
 @media (hover)  {
+
     .card-body {
         transform: translateY(77%) !important;
         transition: transform 0.5s ease;
+    }
+
+    .card-animation {
+        overflow: hidden;
+    
+        transition: transform 0.5s ease;
+    }
+      
+    .card-animation:hover {
+        transform: scale(1.05);
     }
 }
 
@@ -233,16 +244,6 @@ input[type=checkbox] {
     100% {opacity:0;width:355px;}
 }
 
-.card-animation {
-    overflow: hidden;
-
-    transition: transform 0.5s ease;
-}
-  
-.card-animation:hover {
-    transform: scale(1.05);
-}
-
 
 .card-animation:hover .card-body {
     transform: translateY(0) !important;
@@ -270,7 +271,6 @@ input[type=checkbox] {
     transform: scaleX(1);
     transform-origin: left;
 }
-
 
 .btn-animation,
 .btn-animation2 {
