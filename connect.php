@@ -10,7 +10,7 @@
         $sql = "INSERT INTO hire_our_student (fullname, company_name, contact_email, contact_mobile, student_course) VALUES ('$fullname', '$company_name', '$contact_email', '$contact_mobile', '$student_course');";
         $rs = mysqli_query($connection, $sql);
         if($rs) {
-            header("location: client.php");
+            header("location: clients.php");
         } else {
             echo '<script>alert("There was a problem while saving the data")</script>';
             header("location: form.html");

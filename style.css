@@ -176,6 +176,14 @@ input[type=checkbox] {
         padding: 15px;
     }
 }
+
+@media (hover)  {
+    .card-body {
+        transform: translateY(77%) !important;
+        transition: transform 0.5s ease;
+    }
+}
+
 /* --------------------------------------- */
 /* ANIMATIONS */
 
@@ -235,11 +243,6 @@ input[type=checkbox] {
     transform: scale(1.05);
 }
 
-.card-body {
-    transform: translateY(77%) !important;
-
-    transition: transform 0.5s ease;
-}
 
 .card-animation:hover .card-body {
     transform: translateY(0) !important;
