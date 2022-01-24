@@ -1,10 +1,11 @@
+/* GENERAL */
 * {
     scroll-behavior: smooth;
 }
 
 .bg-yellow {
     background-color: #FCD232;
-
+    
 }
 
 .img-50 {
@@ -28,6 +29,11 @@
     color: #fff !important;
 }
 
+.p-custom {
+    padding-top: 90px !important;
+    padding-bottom: 50px !important;
+}
+
 .img-50 {
     height: 50px;
 }
@@ -39,6 +45,12 @@
 .x-small {
     font-size: x-small;
 }
+
+.pointer {
+    cursor: pointer !important;
+}
+
+/* ------------------------------------------------ */
 
 .banner {
     height: 40vh;
@@ -81,14 +93,12 @@ input[type=checkbox] {
     height: 105vh;
 }
 
-.p-custom {
-    padding-top: 90px !important;
-    padding-bottom: 50px !important;
-}
 
 .hamburger {
     display: none;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 768px){
     .nav-link {
@@ -166,4 +176,72 @@ input[type=checkbox] {
     .sidebar-button {
         padding: 15px;
     }
+}
+/* --------------------------------------- */
+/* ANIMATIONS */
+
+.banner h1, span {
+    font-size: 82px;
+}
+
+.banner-animation {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.banner-animation:first-of-type {
+    animation: showup 9s infinite;
+}
+
+.banner-animation:last-of-type {
+    width: 0px;
+    animation: reveal 9s infinite;
+}
+
+.banner-animation:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 9s infinite;
+}
+
+@keyframes showup {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes slidein {
+    0% {margin-left:-800px;}
+    20% {margin-left:-800px;}
+    35% {margin-left:0px;}
+    100% {margin-left:0px;}
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+.card-animation {
+    overflow: hidden;
+
+    transition: transform 0.5s ease;
+}
+  
+.card-animation:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    transform: translateY(77%) !important;
+
+    transition: transform 0.5s ease;
+}
+
+.card-animation:hover .card-body {
+    transform: translateY(0) !important;
 }
