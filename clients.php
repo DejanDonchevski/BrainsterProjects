@@ -45,11 +45,11 @@
         </nav>
 
 
-        <div class="container-fluid bg-dark-yellow pb-250">
+        <div class="container-fluid bg-yellow">
             <div class="d-flex justify-content-center align-items-center py-5">
                 <p class="h1 text-dark font-weight-bold mb-0 py-5">Вработи студенти</p>
             </div>
-            <div class="container table-responsive custom-b-padding pb-200 pb-md-0">
+            <div class="container table-responsive custom-b-padding pb-100 pb-md-0">
                 <table class="table table-striped table-dark">
                     <thead>
                         <tr>
@@ -61,25 +61,27 @@
                             <th scope="col">Тип на студент</th>
                         </tr>
                     </thead>
-                <tbody>
-    <?php
+                    <tbody>
+                        <?php
 
-        $connection = mysqli_connect("localhost", "root", "root", "project01");
-        $query = mysqli_query($connection, "SELECT * FROM hire_student");
-        if(mysqli_num_rows($query)>0){
-        while($row = mysqli_fetch_assoc($query)){
-        echo '<tr>
-                <th scope="row">'.$row["id"].'</th>
-                <td>'.$row["Ime_Prezime"].'</td>
-                <td>'.$row["Kontakt_Mail"].'</td>
-                <td>'.$row["Ime_na_Kompanija"].'</td>
-                <td>'.$row["Kontakt_Telefon"].'</td>
-                <td>'.$row["type_of_student"].'</td>
-              </tr>';
-            }
-        }
-    ?>
-                </tbody>
+                            $connection = mysqli_connect("127.0.0.1", "root", "", "project01");
+                            $query = mysqli_query($connection, "SELECT * FROM hire_our_student");
+                            if(mysqli_num_rows($query)>0){
+                                while($row = mysqli_fetch_assoc($query)){
+                                    echo '
+                                    <tr>
+                                    <th scope="row">'.$row["id"].'</th>
+                                    <td>'.$row["fullname"].'</td>
+                                    <td>'.$row["company_name"].'</td>
+                                    <td>'.$row["contact_email"].'</td>
+                                    <td>'.$row["contact_mobile"].'</td>
+                                    <td>'.$row["student_course"].'</td>
+                                    </tr>
+                                    ';
+                                }
+                            }
+                        ?>
+                    </tbody>
                 </table>
             </div>
         </div>

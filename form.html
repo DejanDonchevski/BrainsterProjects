@@ -48,32 +48,45 @@
         <div class="container-fluid bg-yellow height-custom">
             <h1 class="text-center p-custom">Вработи студенти</h1>
             <div class="container py-5">
-                <form>
+                <form action="connect.php" method="POST" class="py-4">
                     <div class="form-row">
-                        <div class="col">
-                            <label for="namesurname">Име и презиме</label>
-                            <input type="text" name="namesurname" class="form-control p-4" id="namesurname" placeholder="Вашето име и презиме" required>
-
-                            <label for="email" class="mt-3">Контакт емаил на вашата компанија</label>
-                            <input type="email" name="email_contact" class="form-control p-4" id="email" placeholder="Контакт емаил на вашата компанија" required>
-
-                            <label class="mt-3">Тип на студент</label>
-                            <select class="form-control bh-50" name="student_course" required>
-                                <option>Студенти од маркетинг</option>
-                                <option>Студенти од програмирање</option>
-                                <option>Студенти од data science</option>
-                                <option>Студенти од дизајн</option>
+                        <div class="col-12 col-md">
+                            <label class="font-weight-bold" for="fullname">Име и презиме</label>
+                            <input type="text" class="form-control p-4 font-italic" id="fullname" name="fullname" placeholder="Вашето име и презиме" required>
+                        </div>
+                        <div class="col-12 col-md mt-3 mt-md-0">
+                            <label class="font-weight-bold" for="company_name">Име на компанија</label>
+                            <input type="text" class="form-control p-4 font-italic" id="company_name" name="company_name" placeholder="Име на вашата компанија" required>
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col-12 col-md">
+                            <label class="font-weight-bold" for="contact_email">Контакт имејл</label>
+                            <input type="email" class="form-control p-4 font-italic" id="contact_email" name="contact_email" placeholder="Контакт имејл на вашата компанија" required>
+                        </div>
+                        <div class="col-12 col-md mt-3 mt-md-0">
+                            <label class="font-weight-bold" for="contact_mobile">Контакт телефон</label>
+                            <input type="tel" class="form-control p-4 font-italic" id="contact_mobile" name="contact_mobile" placeholder="Контакт телефон на вашата компанија" required>
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col-12 col-md pb-200 pb-md-0">
+                            <label class="font-weight-bold" for="dropdownMenuButton">Тип на студент</label>
+                            <select class="custom-select custom-select-lg font-weight-bold" id="student_course" name="student_course" required>
+                                <option selected disabled>Изберете тип на студент</option>
+                                <option value="1">Студенти од маркетинг</option>
+                                <option value="2">Студенти од програмирање</option>
+                                <option value="3">Студенти од data science</option>
+                                <option value="4">Студенти од дизајн</option>
                             </select>
                         </div>
-                        <div class="col">
-                            <label for="companyname">Име на вашата компанија</label>
-                            <input type="text" class="form-control p-4" id="companyname" name="company_name" placeholder="Име на вашата компанија" required>
-                            <label for="phonenum" class="mt-3">Контакт телефон на вашата компанија</label>
-                            <input type="tel" class="form-control p-4" id="phonenum" name="contact_phone" placeholder="Контакт телефон на вашата компанија" required>
-                            <button class="btn bg-red text-white mt-5 bh-50 form-control btn2 animating" name="hire_students">Испрати</button>
-                        </div>  
+                        <div class="col-12 col-md">
+                            <label class="font-weight-bold invisible">Испрати форма</label>
+                            <button name="hire_our_student" type="submit" class="btn bg-red text-white bh-50 form-control btn2 animating">Испрати</button>
+                        </div>
                     </div>
                 </form>
+
             </div>
         </div>
 
