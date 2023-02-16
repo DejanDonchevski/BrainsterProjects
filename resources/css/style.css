@@ -1,0 +1,215 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.text-green {
+    color: #48695c !important;
+}
+
+.bg-green {
+    background-color: #48695c !important;
+}
+
+.text-orange {
+    color: #dd7f1e !important;
+}
+
+.bg-orange {
+    background-color: #dd7f1e !important;
+}
+
+.border-orange {
+    border-color: #dd7f1e !important;
+}
+
+.text-gray {
+    color: #949d99 !important;
+}
+
+.bg-gray {
+    background-color: #949d99 !important;
+}
+
+.text-white {
+    color: #f6f6f6 !important;
+}
+
+.bg-white {
+    background-color: #f6f6f6 !important;
+}
+
+.text-black {
+    color: #000000 !important;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+.text-red {
+    color: #ff5757 !important;
+}
+
+.bg-red {
+    background-color: #ff5757 !important;
+}
+
+.bg-active {
+    background-color: #c2cac6;
+}
+
+.btn-xl {
+    padding: 0.8rem 2.5rem !important;
+    font-size: 1.2rem !important;
+}
+
+.btn-active {
+    background-color: #48695c !important;
+}
+
+.set-filter-academy.selected {
+    color: #f6f6f6 !important;
+    background-color: #48695c !important;
+}
+
+.small-xl {
+    font-size: 10px !important;
+}
+
+.form-control {
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #000000 !important;
+    background-color: transparent !important;
+}
+
+#login {
+    background: url(./../../public/images/backgrounds/loginBackground.jpg) no-repeat center / cover;
+}
+
+#register {
+    background: url(./../../public/images/backgrounds/registerBackground.jpg) no-repeat center / cover;
+}
+
+#dashboard {
+    background: url(./../../public/images/backgrounds/dashboardBackground.jpg) no-repeat center / cover;
+    min-height: 100vh;
+}
+
+#project {
+    background: url(./../../public/images/backgrounds/projectBackground.jpg) no-repeat center / cover;
+    min-height: 100vh;
+}
+
+#application {
+    background: url(./../../public/images/backgrounds/applicationBackground.jpg) no-repeat center / cover;
+    min-height: 100vh;
+}
+
+.card-circle {
+    top: -35px;
+    right: 25px;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-image {
+    top: -45px;
+    left: 60px;
+}
+
+.form-check-box {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.form-check-box:hover {
+    cursor: pointer;
+    color: #f6f6f6;
+    background-color: #48695c !important;
+}
+
+.filters {
+    position: sticky;
+    top: 20px;
+}
+
+.badge-pos {
+    right: 35px;
+    bottom: -20px;
+}
+
+.options {
+    padding: 20px;
+    display: none;
+    top: 50%;
+    right: -75px;
+    transform: translateY(-50%);
+}
+.card.position-relative:hover .options {
+    display: block;
+}
+
+.pagination .active>.page-link {
+    color: #f6f6f6 !important;
+    background-color: #48695c !important;
+    border-color: #48695c !important;
+}
+
+.pagination .page-link {
+    color: #000000 !important;
+}
+
+@media (max-width: 1024px) {
+    #login {
+        min-height: 100vh !important;
+    }
+    
+    #register {
+        min-height: 100vh !important;
+    }
+    
+    #dashboard {
+        min-height: 100vh !important;
+    }
+    
+    #project {
+        min-height: 100vh !important;
+    }
+    
+    #application {
+        min-height: 100vh !important;
+    }
+
+    .vh-100.vh-custom {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-option {
+        margin-bottom: -100px !important;
+    }
+
+    .options {
+        display: none;
+        bottom: 50px !important;
+        right: 10px !important;
+    }
+}
