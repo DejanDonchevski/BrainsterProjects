@@ -1,3 +1,4 @@
-# Welcome to my repo where all of my projects will be stored. 
+# Welcome to my repo where all of my projects are stored. 
 
-## All of the projects are constructed on an 1920x1080p display.
+## Тhese are all my projects from the Brainster Academy. 
+## One is made with vanilla PHP and the other is made with Laravel.
